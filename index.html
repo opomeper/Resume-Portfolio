@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joemer B. Sauro - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+            <div class="profile_name">
+                <h3>Joemer B. Sauro</h3>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                    saurojoemer14@gmail.com
+                </div>
+                <div class="paragraph_break"></div>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                    +639636620832
+                </div>
+            </div>
+
+            <div class="topdiv">
+                <a class="topmenu" href="#about-me">About Me</a>
+                <a class="topmenu" href="#skills">Skills</a>
+                <a class="topmenu" href="#projects">Projects</a>
+                <a class="topmenu" href="#recommendations">Recommendations</a>
+                <!-- Add the links for Skills, Projects and Recommendation here -->
+            </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+        <div>
+            <img src="html_finalprojimages/ProfileImage.jpg" class="profile_image" alt="My Profile Picture"/>
+        </div>
+
+        <div>
+            <h1>
+                Hi, I'm Joemer B. Sauro! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="" />
+            </h1>
+            <p>
+                I'm a Bachelor of Science in Information Technology graduate with a passion for full stack development
+                dedicated to turning complex problems into elegant, user-focused digital solutions.
+            </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="paragraph_break"></div>
+        
+        <div class="all_skills">
+            <div class="skill">
+                <img src="html_finalprojimages/html5.png" alt=""/>
+                <h6>HTML</h6>
+                <p>3 years experience</p>
+            </div>  
+
+            <div class="skill">
+                <img src="html_finalprojimages/js.jpeg" alt=""/>
+                <h6>JavaScript</h6>
+                <p>3 years experience</p>
+            </div>  
+
+            <div class="skill">
+                <img src="html_finalprojimages/CSS3.png" alt=""/>
+                <h6>CSS</h6>
+                <p>3 years experience</p>
+            </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/java.png" alt=""/>
+                <h6>Java</h6>
+                <p>1.5 years experience</p>
+            </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/react.png" alt=""/>
+                <h6>React</h6>
+                <p>1 years experience</p>
+            </div>
+            <!-- Add more skills here -->
+
+        </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>
+            Projects
+        </h2>
+        <div class="paragraph_break"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>DevPort</h3>
+                <ul>
+                    <li>Interactive Portfolio Builder a web-based app that allows developers to create and customize their own portfolio websites without writing code. Built entirely using React, JavaScript, HTML, and CSS, it features drag-and-drop components, light/dark themes, and mobile responsiveness.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>TaskZen</h3>
+                <ul>
+                    <li>Smart To-Do Web App - a clean and responsive to-do list app with smart task suggestions and local data storage. Built using Vanilla JavaScript, HTML, and CSS, with an updated version using React for state management and reusable components.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>ShopEase</h3>
+                <ul>
+                    <li>A modern and responsive e-commerce front-end template built with React, HTML, and CSS. It includes product grids, filterable categories, a shopping cart interface, and product detail modals. Styled using clean custom CSS with Flexbox and Grid.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="paragraph_break"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="paragraph_break"></div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span>
+                    Working with Joemer was a pleasure. Their deep knowledge of React and attention to detail helped us launch a polished front-end under tight deadlines. Highly dependable and professional.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                    Joemer consistently delivered clean, efficient code and showed strong initiative on every project. A reliable developer who’s always ready to collaborate and help the team move forward.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                    Joemer is not just technically skilled but also a great communicator. Always willing to explain concepts and assist others, making the team environment both productive and supportive. 
+                <span>&#8221;</span>
+            </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+        <div class="flex_center">
+            <fieldset>
+                <legend class="introduction">Leave a Recommendation</legend>          
+                <input type="text" placeholder="Name (Optional)"> <br/>
+                <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                <div class="flex_center">
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <!--Goto Top/Home-->
+    <div class="iconbutton">
+      <a href="#home" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt=""/>
+      <h3>Thanks for leaving a recommendation!<!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+</body>
+</html>
