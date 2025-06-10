@@ -15,8 +15,14 @@ function addRecommendation() {
     
     // Reset the value of the textarea
     recommendation.value = "";
+    showPopup(true);
   }
-  showPopup(true);
+  else {
+    console.log("No recommendation entered");
+    // Call showPopup2 here
+    showPopup2(true);
+  }
+  
 }
 
 function showPopup(bool) {
@@ -25,5 +31,14 @@ function showPopup(bool) {
     }
     else {
         document.getElementById('popup').style.visibility = 'hidden'
+    }
+}
+
+function showPopup2(bool) {
+    if (bool) {
+        document.getElementById('popup2').style.visibility = 'visible'
+    }
+    else {
+        document.getElementById('popup2').style.visibility = 'hidden'
     }
 }

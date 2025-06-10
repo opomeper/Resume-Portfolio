@@ -74,16 +74,28 @@
                 <h6>CSS</h6>
                 <!-- <p>3 years experience</p> -->
             </div>
-
-            <div class="skill">
+            
+            <!-- <div class="skill">
                 <img src="html_finalprojimages/java.png" alt=""/>
                 <h6>Java</h6>
-                <!-- <p>1.5 years experience</p> -->
-            </div>
-
+                <p>1.5 years experience</p>
+            </div> -->
+            
             <div class="skill">
                 <img src="html_finalprojimages/react.png" alt=""/>
                 <h6>React</h6>
+                <!-- <p>1 years experience</p> -->
+            </div>
+             
+            <div class="skill">
+                <img src="html_finalprojimages/node.png" alt=""/>
+                <h6>Node.js</h6>
+                <!-- <p>1 years experience</p> -->
+            </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/express.png" alt=""/>
+                <h6>Express</h6>
                 <!-- <p>1 years experience</p> -->
             </div>
             <!-- Add more skills here -->
@@ -99,7 +111,7 @@
         <div class="paragraph_break"></div>
 
         <div id="projects-container" class="projects-container">
-            <div class="project-card">
+            <!-- <div class="project-card">
                 <h3>DevPort</h3>
                 <ul>
                     <li>Interactive Portfolio Builder a web-based app that allows developers to create and customize their own portfolio websites without writing code. Built entirely using React, JavaScript, HTML, and CSS, it features drag-and-drop components, light/dark themes, and mobile responsiveness.</li>
@@ -118,6 +130,12 @@
                 <ul>
                     <li>A modern and responsive e-commerce front-end template built with React, HTML, and CSS. It includes product grids, filterable categories, a shopping cart interface, and product detail modals. Styled using clean custom CSS with Flexbox and Grid.</li>
                 </ul>
+            </div> -->
+            <div class="project-card">
+                 <a href="https://opomeper.github.io/e-plantShopping/"> <h3>Paradise Nursery</h3> </a>
+                <ul>
+                    <li>A shopping cart application for an online plant shop which offers a variety of house plants. front-end template built with React+Vite, HTML, and CSS. It includes product grids, a shopping cart interface, and product detail modals. Styled using clean custom CSS with Flexbox and Grid.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -128,7 +146,7 @@
         <h2>Recommendations</h2>
         <div class="paragraph_break"></div>
         <div class="all_recommendations" id="all_recommendations">
-            <div class="recommendation">
+            <!-- <div class="recommendation">
                 <span>&#8220;</span>
                     Working with Joemer was a pleasure. Their deep knowledge of React and attention to detail helped us launch a polished front-end under tight deadlines. Highly dependable and professional.
                 <span>&#8221;</span>
@@ -142,7 +160,15 @@
                 <span>&#8220;</span>
                     Joemer is not just technically skilled but also a great communicator. Always willing to explain concepts and assist others, making the team environment both productive and supportive. 
                 <span>&#8221;</span>
-            </div>
+            </div> -->
+            <div class="recommendation">
+                <span>&#8220;</span>
+                    *NOTE*<br>
+                    Don't have database yet.<br>
+                    You can leave a recommendation by filling out the form below.<br>
+                    But will not be saved permanently yet.<br>
+                    Remove after refreshing the page.
+                <span>&#8221;</span>
       </div>
     </section>
 
@@ -174,6 +200,11 @@
       <img src="html_finalprojimages/checkmark--outline.svg" alt=""/>
       <h3>Thanks for leaving a recommendation!<!-- Add appropriate text here--></h3>
       <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <div class="popup2" id="popup2">
+      <h3>No recommendation entered, please write recommendation.<!-- Add appropriate text here--></h3>
+      <button onclick="showPopup2(false)">Ok</button>
     </div>
 </body>
 </html>
