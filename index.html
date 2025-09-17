@@ -59,19 +59,19 @@
         <div class="all_skills">
             <div class="skill">
                 <img src="html_finalprojimages/html5.png" alt=""/>
-                <h6>HTML</h6>
+                <h6>HTML5</h6>
                 <!-- <p>3 years experience</p> -->
             </div>  
 
             <div class="skill">
                 <img src="html_finalprojimages/js.jpeg" alt=""/>
-                <h6>JavaScript</h6>
+                <h6>JavaScript (ES6)</h6>
                 <!-- <p>3 years experience</p> -->
             </div>  
 
             <div class="skill">
                 <img src="html_finalprojimages/CSS3.png" alt=""/>
-                <h6>CSS</h6>
+                <h6>CSS3</h6>
                 <!-- <p>3 years experience</p> -->
             </div>
             
@@ -98,6 +98,24 @@
                 <h6>Express</h6>
                 <!-- <p>1 years experience</p> -->
             </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/python.png" alt=""/>
+                <h6>Python</h6>
+                <!-- <p>1 years experience</p> -->
+            </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/gitngithub.png" alt=""/>
+                <h6>Git & GitHub</h6>
+                <!-- <p>1 years experience</p> -->
+            </div>
+
+            <div class="skill">
+                <img src="html_finalprojimages/postgresql.png" alt=""/>
+                <h6>PostgreSQL</h6>
+                <!-- <p>1 years experience</p> -->
+            </div>
             <!-- Add more skills here -->
 
         </div>
@@ -111,28 +129,8 @@
         <div class="paragraph_break"></div>
 
         <div id="projects-container" class="projects-container">
-            <!-- <div class="project-card">
-                <h3>DevPort</h3>
-                <ul>
-                    <li>Interactive Portfolio Builder a web-based app that allows developers to create and customize their own portfolio websites without writing code. Built entirely using React, JavaScript, HTML, and CSS, it features drag-and-drop components, light/dark themes, and mobile responsiveness.</li>
-                </ul>
-            </div>
-            <hr>
             <div class="project-card">
-                <h3>TaskZen</h3>
-                <ul>
-                    <li>Smart To-Do Web App - a clean and responsive to-do list app with smart task suggestions and local data storage. Built using Vanilla JavaScript, HTML, and CSS, with an updated version using React for state management and reusable components.</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>ShopEase</h3>
-                <ul>
-                    <li>A modern and responsive e-commerce front-end template built with React, HTML, and CSS. It includes product grids, filterable categories, a shopping cart interface, and product detail modals. Styled using clean custom CSS with Flexbox and Grid.</li>
-                </ul>
-            </div> -->
-            <div class="project-card">
-                 <a href="https://opomeper.github.io/e-plantShopping/"> <h3>Paradise Nursery</h3> </a>
+                 <a href="https://opomeper.github.io/e-plantShopping/" target="_blank" rel="noopener noreferrer"> <h3>Paradise Nursery</h3> </a>
                 <ul>
                     <li>A shopping cart application for an online plant shop which offers a variety of house plants. front-end template built with React+Vite, HTML, and CSS. It includes product grids, a shopping cart interface, and product detail modals. Styled using clean custom CSS with Flexbox and Grid.</li>
                 </ul>
@@ -146,21 +144,7 @@
         <h2>Recommendations</h2>
         <div class="paragraph_break"></div>
         <div class="all_recommendations" id="all_recommendations">
-            <!-- <div class="recommendation">
-                <span>&#8220;</span>
-                    Working with Joemer was a pleasure. Their deep knowledge of React and attention to detail helped us launch a polished front-end under tight deadlines. Highly dependable and professional.
-                <span>&#8221;</span>
-            </div>
-            <div class="recommendation">
-                <span>&#8220;</span>
-                    Joemer consistently delivered clean, efficient code and showed strong initiative on every project. A reliable developer who’s always ready to collaborate and help the team move forward.
-                <span>&#8221;</span>
-            </div>
-            <div class="recommendation">
-                <span>&#8220;</span>
-                    Joemer is not just technically skilled but also a great communicator. Always willing to explain concepts and assist others, making the team environment both productive and supportive. 
-                <span>&#8221;</span>
-            </div> -->
+            <!-- Recommendations will be dynamically added here -->
             <div class="recommendation">
                 <span>&#8220;</span>
                     *NOTE*<br>
@@ -177,7 +161,7 @@
         <div class="flex_center">
             <fieldset>
                 <legend class="introduction">Leave a Recommendation</legend>          
-                <input type="text" placeholder="Name (Optional)"> <br/>
+                <input type="text" id="name" placeholder="Name (Optional)"> <br/>
                 <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
                 <div class="flex_center">
                     <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
